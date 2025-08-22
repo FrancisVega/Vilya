@@ -20,7 +20,7 @@ Its philosophy is simple: **lightweight, fast, and reliable**, even for projects
 
 - Declarative pipeline:
   ```ts
-  const ssg = new Vilya({ filesAtSameTime: 10 });
+  const ssg = new Vilya({ batchSize: 10 });
 
   ssg
     .source("./pages-json")
