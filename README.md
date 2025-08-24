@@ -16,16 +16,20 @@ Vilya is an <strong>ultra-fast scalable Static Site Generator (SSG)</strong> des
 
 - **Maximum speed**: streaming processing, worker-based parallelization, and incremental builds.  
 - **Minimal RAM usage**: each page is processed individually and released immediately.  
-- **Flexible**: plugin architecture inspired by Metalsmith/Express using `.use()`.  
+- **Flexible**: plugin architecture inspired by Metalsmith using `.use()`.  
 - **React-first**: central layout and reusable components for static rendering and optional selective hydration.
 
 ---
 
-## 🔹 Key Features (Planned)
+## 🔹 Key features
 
 - Declarative pipeline:
-  ```ts
-  const vilya = new Vilya({ batchSize: 10 });
+  
+```javascript
+  const vilya = new Vilya({
+    pageConcurrency: 10,
+    workerCount: 2
+  }); 
 
   vilya
     .source("./store")
@@ -35,3 +39,4 @@ Vilya is an <strong>ultra-fast scalable Static Site Generator (SSG)</strong> des
     .use(writeOut("./dist"))
     .postBuild(generateSitemap)
     .build();
+```
