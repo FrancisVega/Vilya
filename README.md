@@ -1,9 +1,14 @@
-# Vilya
+<br/>
+<h1 align="center">Vilya</h1>
+<br/>
 
-> *"The Ring of Air that Guides Creation"* – Inspired by Tolkien
+<p align="center">
+Vilya is an <strong>ultra-fast scalable Static Site Generator (SSG)</strong> designed to transform <strong>structured JSON into static websites</strong> using <strong>React</strong>.
+  
+  <br/>
+  Using a flexible plugin pipeline. Its philosophy is simple: <strong>lightweight, fast, and reliable</strong>  even for projects with millions of pages with a strong focus on <strong>partial-hydration</strong> and <strong>incremental builds.</strong>
+</p>
 
-Vilya is an **ultra-fast, scalable Static Site Generator (SSG)** designed to transform **structured JSON into static websites** using **React** with a flexible plugin pipeline.  
-Its philosophy is simple: **lightweight, fast, and reliable**, even for projects with millions of pages with a strong focus on partial-hydration and incremental builds.
 
 ---
 
@@ -20,10 +25,10 @@ Its philosophy is simple: **lightweight, fast, and reliable**, even for projects
 
 - Declarative pipeline:
   ```ts
-  const ssg = new Vilya({ batchSize: 10 });
+  const vilya = new Vilya({ batchSize: 10 });
 
-  ssg
-    .source("./pages-json")
+  vilya
+    .source("./store")
     .use(parseJson())
     .use(applyLayout())
     .use(minifyHtml())
