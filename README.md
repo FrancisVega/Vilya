@@ -3,7 +3,7 @@
 <br/>
 
 <p align="center">
-Vilya is an <strong>ultra-fast scalable Static Site Generator (SSG)</strong> designed to transform <strong>structured JSON into static websites</strong> using <strong>React</strong>.
+Vilya is an <strong>ultra-fast scalable Static Site Generator (SSG)</strong> designed to transform <strong>structured JSON pages into static websites</strong> using <strong>React</strong>.
   
   <br/>
   Using a flexible plugin pipeline. Its philosophy is simple: <strong>lightweight, fast, and reliable</strong>  even for projects with millions of pages with a strong focus on <strong>partial-hydration</strong> and <strong>incremental builds.</strong>
